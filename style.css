@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  background-image: linear-gradient(0deg, black, #dc052d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+} */
+
+.box {
+  background-image: linear-gradient(0deg, black, #dc052d);
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.img {
+  background-color: #dc052d;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.5s ease;
+}
+.container {
+  position: relative;
+  height: 50px;
+  margin: 0.5rem;
+}
+
+.container .name-box {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.5s ease;
+}
+
+.btn {
+  background-color: #dc052d;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.5s ease;
+}
+.btn:focus,
+.name-box:focus {
+  outline: none;
+}
+
+.container.active .name-box {
+  width: 298px;
+}
+.container.active .btn {
+  transform: translateX(198px);
+}
