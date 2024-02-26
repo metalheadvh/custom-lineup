@@ -19,13 +19,14 @@
 } */
 
 .box {
-  background-image: linear-gradient(0deg, black, #dc052d);
+  background-image: linear-gradient(0deg, rgb(32, 32, 32), #dc052ced);
   background-size: cover;
   display: grid;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2rem;
 }
 
 .img {
